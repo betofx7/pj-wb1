@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+.box-degrade{
+  width: 100% ;
+  padding: 300px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to left, rgb(70, 69, 69), blue, purple);
+  background-size: 500% 100%;
+  animation: degrade-animado 5s infinite alternate ;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%; ;
+    }
+
+    100%{
+        background-position-x: 100%; ;
+    }
+}
+
+button{
+    background-color: #fffefe;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: #380142;
+}
